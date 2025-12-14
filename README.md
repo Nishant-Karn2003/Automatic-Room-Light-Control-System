@@ -31,10 +31,10 @@ Logic:
 ❌ Bright environment OR No motion → Light OFF
 
 🧠 System Architecture
-
 PIR Sensor ──┐
              ├──> Arduino Uno ──> Relay ──> Room Light
 LDR Sensor ──┘
+
 
 🧰 Components Used
 
