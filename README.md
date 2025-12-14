@@ -1,5 +1,3 @@
-
-
 💡 Room Light Automation System
 
 Arduino-Based Smart Lighting using PIR & LDR
