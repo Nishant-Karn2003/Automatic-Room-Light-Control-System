@@ -1,108 +1,112 @@
 # 💡 Room Light Automation System
 
-Arduino-Based Smart Lighting using PIR & LDR
+## Arduino-Based Smart Lighting using PIR & LDR
 
-The Room Light Automation System is an embedded systems project designed to automatically control room lighting based on ambient light intensity and human presence. By combining a PIR motion sensor and an LDR (Light Dependent Resistor) with an Arduino Uno, the system ensures efficient energy usage, reduced power wastage, and enhanced user convenience.
+The **Room Light Automation System** is an embedded systems project designed to automatically control room lighting based on ambient light intensity and human presence.
 
-📌 Project Objective
+By combining a **PIR Motion Sensor** and an **LDR (Light Dependent Resistor)** with an **Arduino Uno**, the system ensures efficient energy usage, reduced power wastage, and enhanced user convenience.
 
-Automate room lighting without manual switching
+---
 
-Reduce electricity consumption
+# 📌 Project Objective
 
-Improve convenience and smart home functionality
+* Automate room lighting without manual switching
+* Reduce electricity consumption
+* Improve convenience and smart home functionality
 
-⚙️ How the System Works
+---
 
-PIR Sensor detects human movement in the room
+# ⚙️ How the System Works
 
-LDR Sensor measures surrounding light intensity
+1. **PIR Sensor** detects human movement in the room
+2. **LDR Sensor** measures surrounding light intensity
+3. **Arduino Uno** processes both sensor inputs
+4. **Relay Module** switches the room light ON/OFF automatically
 
-Arduino Uno processes both sensor inputs
+### Logic
 
-Relay Module switches the room light ON/OFF automatically
+* ✅ Dark + Motion Detected → **Light ON**
+* ❌ Bright Environment OR No Motion → **Light OFF**
 
-Logic:
+---
 
-✅ Dark + Motion detected → Light ON
+# 🧰 Components Used
 
-❌ Bright environment OR No motion → Light OFF
+| Component                     | Quantity    |
+| ----------------------------- | ----------- |
+| Arduino Uno R3                | 1           |
+| PIR Motion Sensor             | 1           |
+| LDR (Photoresistor)           | 1           |
+| SPDT Relay Module             | 1           |
+| NPN Transistor (BJT)          | 1           |
+| Diode                         | 1           |
+| Resistors (10kΩ, 1kΩ)         | As required |
+| Light Bulb / LED              | 1           |
+| 9V Power Supply               | 1           |
+| Breadboard & Connecting Wires | As required |
 
+---
 
-🧰 Components Used
+# 🛠️ Circuit Description
 
-Arduino Uno R3
+* The PIR sensor output is connected to a digital pin of the Arduino
+* The LDR is connected in a voltage divider configuration to an analog pin
+* The relay module is driven using a transistor for safe switching operation
+* Arduino logic decides the switching action based on sensor readings
 
-PIR Motion Sensor
+---
 
-LDR (Photoresistor)
-
-SPDT Relay Module
-
-NPN Transistor (BJT)
-
-Diode
-
-Resistors (10kΩ, 1kΩ)
-
-Light Bulb / LED
-
-9V Power Supply
-
-Breadboard & Connecting Wires
-
-🛠️ Circuit Description
-
-The PIR sensor output is connected to a digital pin of Arduino
-
-The LDR is connected in a voltage divider configuration to an analog pin
-
-The relay module is driven using a transistor to safely control the light
-
-Arduino logic decides the switching action based on sensor readings
-
-🧪 Working Principle
+# 🧪 Working Principle
 
 The system continuously monitors:
 
-Infrared radiation from the PIR sensor for motion detection
+* Infrared radiation from the PIR sensor for motion detection
+* Ambient light levels using the LDR
 
-Ambient light levels using the LDR
+The light turns ON only when both conditions are satisfied—**darkness and human presence**—ensuring energy-efficient automation.
 
-The light turns ON only when both conditions are satisfied—darkness and human presence—ensuring energy-efficient automation.
+---
 
-✅ Advantages
+# 🎥 Working Demo
 
-Significant energy savings
+[▶ Click Here to Watch the Demo](https://drive.google.com/file/d/1L0B24_ZaWocSOOqO-hqfOMSvN9_r8nAf/view?usp=sharing)
 
-Fully automatic operation
+---
 
-Cost-effective and easy to implement
+# ✅ Advantages
 
-Reduces manual effort
+* Significant energy savings
+* Fully automatic operation
+* Cost-effective and easy to implement
+* Reduces manual effort
+* Suitable for homes, offices, corridors, and classrooms
 
-Suitable for homes, offices, corridors, and classrooms
+---
 
-📈 Applications
+# 📈 Applications
 
-Smart homes
+* Smart homes
+* Offices and conference rooms
+* Hallways and staircases
+* Energy-efficient buildings
 
-Offices and conference rooms
+---
 
-Hallways and staircases
+# 🏫 Academic Details
 
-Energy-efficient buildings
+| Category         | Details                          |
+| ---------------- | -------------------------------- |
+| **Institute**    | National Institute of Technology |
+| **Laboratory**   | EEIM & MPMC                      |
+| **Project Type** | Embedded Systems / IoT           |
 
-🏫 Academic Details
+### Guided By
 
-Institute: National Institute of Technology
+* Dr. Subir Das (Assistant Professor, EIE)
+* Dr. Debanjan Acharyaa (Assistant Professor, EIE)
 
-Laboratory: EEIM & MPMC
+---
 
-Project Type: Embedded Systems / IoT
+# 🌟 Conclusion
 
-Guided By:
-
-Dr. Subir Das (Assistant Professor, EIE)
-
-Dr. Debanjan Acharyaa (Assistant Professor, EIE)
+This project demonstrates an efficient and low-cost smart lighting solution using embedded systems and sensor-based automation. It highlights the practical implementation of IoT concepts for energy conservation and smart infrastructure development.
